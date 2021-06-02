@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:var(--white);
+}
+
+
+:root{
+    --blue-dark: #292C34;
+    --bleu-light: #5EA9B0;
+    --blue-box: #4A5060;
+    --white: #FFFFFF;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--blue-dark);
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 1rem;
+}
