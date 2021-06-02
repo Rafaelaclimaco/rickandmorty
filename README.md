@@ -7,4 +7,4 @@
 >*Disciplina de:*
 >> - ***Laboratório de aplicações***
 
-![Rick & Morty](/public/inicio.png)
+![Rick & Morty](/public/favicon.png)
