@@ -8,42 +8,44 @@ console.log(character);
                 <img className={styles.characterimg} height="100" src={character.image} />
             </div>
             
-            <div className={styles.status}>
-                    <h2>{character.status}</h2>
-                     </div> 
+            <div className={styles.status}>   </div> 
+                    
+                  
+
             <div className={styles.characterepisode}>
-                    <h2>{character.name}</h2>
+            <h2>{character.status}</h2>
+                    <h1>{character.name}</h1>
             </div>
 
             <div className={styles.container_characterdetails}>
                 <div className={styles.characterdetails}>
-                    <h2>Planet</h2>
+                    <h2 className={styles.denominar}>Planet</h2>
                     <h2>{character.origin.name}</h2>
                 </div>
 
                 <div className={styles.characterdetails}>
-                    <h2>Species</h2>
+                    <h2 className={styles.denominar}>Species</h2>
                     <h2>{character.species}</h2>
                 </div>
 
                 <div className={styles.characterdetails}>
-                    <h2>Gender</h2>
+                    <h2 className={styles.denominar}>Gender</h2>
                     <h2>{character.gender}</h2>
                 </div>
             
 
-            <h2 className={styles.characterepisode}>EPISODES</h2>
+            <h1 className={styles.characterepisode}>EPISODES</h1>
 
             <div className={styles.characterdetails}>
-                    <h2>episode1</h2>
+                    <h2 className={styles.denominar}>episode1</h2>
             </div>
 
             <div className={styles.characterdetails}>
-                    <h2>episode2</h2>
+                    <h2 className={styles.denominar}>episode2</h2>
             </div>
 
             <div className={styles.characterdetails}>
-                    <h2>episode3</h2>
+                    <h2 className={styles.denominar}>episode3</h2>
             </div>
             </div>
         </>

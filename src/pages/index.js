@@ -9,16 +9,17 @@ export default function Home({ characters }) {
     <>
     <div className={styles.conteinerinicio}>
     <div className={styles.inicio}>
-    <div>Wubba Lubba Dub-Dub </div>
-    <div>RICK AND MORTY</div>
-    <p>Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô.</p>
+    <h3>Wubba Lubba Dub-Dub </h3>
+    <h1>RICK AND MORTY</h1>
+    <h4>Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô.</h4>
     </div>
     <img className={styles.imagem} height="500" src={'./inicio.png'} />
     </div>
+
+    <h1 className={styles.titulos}>CHARACTERS</h1>
     <div className={styles.tableContainer}>
 
       <div className={styles.tableHead}>
-        <div></div>
         <div>NAME</div>
         <div>PLANETS</div>
         <div>SPECIES</div>

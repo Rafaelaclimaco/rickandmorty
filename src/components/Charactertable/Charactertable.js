@@ -8,10 +8,10 @@ export default function Charactertable({ nome, especie, planeta, image, code }) 
     <Link key={code} href={`character/${code}`}>
       <a>
         <div className={styles.charactherContainer}>
-            <div><img height="100" src={image} /> </div>
-            <div>{nome}</div>
-            <div>{planeta}</div>
-            <div>{especie}</div>
+            <div className={styles.conteinerimg}><img height="100" src={image} /> </div>
+            <div className={styles.chato}>{nome}</div>
+            <div className={styles.chato}>{planeta}</div>
+            <div className={styles.chato}>{especie}</div>
           </div>
       </a>
     </Link>
