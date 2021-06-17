@@ -7,12 +7,14 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <Link href="/">
+          <a>
           <Image className={styles.headerimage}
             src="/favicon.png"
             alt="logo"
             width={90}
             height={31.38}
           />
+          </a>
         </Link>
       </header>
     </>
