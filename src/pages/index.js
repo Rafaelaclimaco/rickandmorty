@@ -27,7 +27,6 @@ export default function Home({ characters }) {
 
   return (
     <>
-
       <Head>
         <title>Rick&Morty</title>
         <link rel="icon" href="/favicon.ico" />
@@ -60,7 +59,7 @@ export default function Home({ characters }) {
                 estado={character.status}
                 code={character.id}
                 genero={character.gender}
-
+                key={character.id}
               />
           )}
           <div className={styles.notfound}>

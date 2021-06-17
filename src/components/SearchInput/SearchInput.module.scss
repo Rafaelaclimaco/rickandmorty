@@ -38,16 +38,18 @@
 
 @media (max-width: 720px){
         .container{
-                display: inherit;
-                margin: 2rem auto;
-                padding: 0 1rem;
-            
+        align-items: baseline;
+                  
         .titulos{
                font-size: 1.5rem;
                text-align: center;
-                }
-             
+         }
+
+        .wrapper{
+           padding-left: 40px;     
         } 
+        } 
+        
 }
       
     

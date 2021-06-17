@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Code } from '@material-ui/icons';
 
 
-export default function Charactertable({ nome, especie, planeta, image, code }) {
+export default function Charactertable({ nome, especie, planeta, image, code, key }) {
   return (
     <Link key={code} href={`character/${code}`}>
       <a>
