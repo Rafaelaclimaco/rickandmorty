@@ -1,47 +1,62 @@
 .container{
   margin-top: 94px;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
   text-align: center;
-
 
   .characterimg {
     width: 357px;
-    height: 346.89px;
+    height: auto;
     border-radius: 90%;
   }
 }
 
-.characterepisode{
+
+.character{
   text-transform: uppercase;
   text-align: center;
   padding: 2rem;
+  justify-content: center;
 
-  .h1{
+  h1{
     font-size: 2.441em;
   }
 
-  .h2{
-    font-size: 1.563;
+  h2{
+    font-size: 1.563em;
+  }
+
+  .estado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  .statusgreen{
+      margin: 1rem;
+      background-color: green;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: space-between;
+      }
+    
+    .statusred{
+      @extend .statusgreen;
+      background-color: red;
+    }
   }
 }
 
 .container_characterdetails{
- display: grid;
- place-items: center;
- padding: 0 1rem;
- max-width: 800px;
- margin: 0 auto;
- 
+      display: grid;
+      place-items: center;
+      padding: 0 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
 }
 
-.status{
-background-color: green;
-width: 15px;
-height: 15px;
-border-radius: 100%;
-display: flex;
-justify-content: space-between;
-}
+
 
 .characterdetails{
   align-items: center;
@@ -56,10 +71,42 @@ justify-content: space-between;
   padding: 2rem;
 
   h2{
-    font-size: 1em;
+    font-size: 1.25rem;
   }
   .denominar{
     color: var( --bleu-light);
   }
 }
 
+@media (max-width: 720px){
+  .characterdetails{
+    height: 50px;  
+    
+    h2{
+      font-size: 1rem;
+    }
+  }
+
+  .container{
+    margin-top: 70px;
+    margin-bottom: 10px;
+
+
+  .characterimg {
+    width: 194px;
+  }
+}
+
+.character{
+  .estado{
+  h1{
+    font-size: 1.3125rem;
+  }
+
+  h2{
+    font-size: 	1rem;
+ 
+  }
+}
+}
+}

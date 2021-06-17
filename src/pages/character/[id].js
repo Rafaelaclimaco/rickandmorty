@@ -1,20 +1,25 @@
 import styles from './Character.module.scss';
 
 export default function Character({character}) {
-console.log(character);
+
+    let alive = styles.statusgreen;
+if(character.status == "Dead"){
+    alive = styles.statusred;
+} 
+
     return (
         <>
             <div className={styles.container}>
                 <img className={styles.characterimg} height="100" src={character.image} />
             </div>
             
-            <div className={styles.status}>   </div> 
-                    
-                  
-
-            <div className={styles.characterepisode}>
+          
+            <div className={styles.character}>
+                <div className={styles.estado}>
+            <div className={alive}></div>
             <h2>{character.status}</h2>
-                    <h1>{character.name}</h1>
+            </div>
+                    <h1>{character.name}</h1> 
             </div>
 
             <div className={styles.container_characterdetails}>
@@ -32,22 +37,8 @@ console.log(character);
                     <h2 className={styles.denominar}>Gender</h2>
                     <h2>{character.gender}</h2>
                 </div>
-            
 
-            <h1 className={styles.characterepisode}>EPISODES</h1>
-
-            <div className={styles.characterdetails}>
-                    <h2 className={styles.denominar}>episode1</h2>
-            </div>
-
-            <div className={styles.characterdetails}>
-                    <h2 className={styles.denominar}>episode2</h2>
-            </div>
-
-            <div className={styles.characterdetails}>
-                    <h2 className={styles.denominar}>episode3</h2>
-            </div>
-            </div>
+    </div>
         </>
     )
 }

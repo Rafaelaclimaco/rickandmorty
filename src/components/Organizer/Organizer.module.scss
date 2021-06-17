@@ -1,0 +1,65 @@
+.heading {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    .heading_name,
+    .heading_planets,
+    .heading_species{
+    display: flex;
+    flex: 0;   
+    justify-items: center;
+    align-items: center;
+  
+        .heading_arrow{
+            padding-left: 0;
+            svg{
+                fill: var(--bleu-light);
+            }
+        }
+}  
+    .heading_name{
+        text-align: right;
+        margin-left: 5rem;
+    }   
+    
+    .heading_species{
+        text-align: right;
+    }
+     
+    .heading_planets{
+        text-align:center;
+        margin-left: 5rem;
+    }   
+
+  
+    div{
+        flex: 1;
+        padding: .5rem;
+        color: var(--bleu-light);
+        
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+}
+
+  @media (max-width: 720px){
+
+    .heading{
+        
+    .heading_planets,
+    .heading_species{
+        display: none;
+    }
+
+}
+  }
+
+  
+
+ 
